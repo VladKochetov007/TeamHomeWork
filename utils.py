@@ -15,4 +15,10 @@ def calculate_factorial(n: int) -> int:
         raise ValueError("Factorial is not defined for negative numbers")
     if n == 0 or n == 1:
         return 1
-    return n * calculate_factorial(n - 1) 
+    return n * calculate_factorial(n - 1)
+
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
