@@ -27,7 +27,7 @@ def is_power_of_five(n):
 def gcd(a, b):
     while b:
         a, b = b, a % b
-    return a
+    return a #тут застосовується рекурсія
 def is_divisible_by_5(n):
     return n % 5 == 0
 
