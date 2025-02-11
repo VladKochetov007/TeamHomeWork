@@ -15,4 +15,11 @@ def calculate_factorial(n: int) -> int:
         raise ValueError("Factorial is not defined for negative numbers")
     if n == 0 or n == 1:
         return 1
-    return n * calculate_factorial(n - 1) 
+    return n * calculate_factorial(n - 1)
+
+def is_power_of_five(n):
+    if n <= 0:
+        return False
+    while n % 5 == 0:
+        n //= 5
+    return n == 1
