@@ -28,4 +28,9 @@ def gcd(a, b):
     while b:
         a, b = b, a % b
     return a
+def is_divisible_by_5(n):
+    return n % 5 == 0
 
+print(is_divisible_by_5(10))
+print(is_divisible_by_5(7))
+print(is_divisible_by_5(25))
